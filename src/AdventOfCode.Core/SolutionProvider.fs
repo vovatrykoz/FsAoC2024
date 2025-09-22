@@ -8,28 +8,29 @@ type SolutionProvider<'TInfo, 'TInput, 'TOutput>
         logger: ILogger
     ) =
 
-    member val InfoProvider = infoProvider
+    member _.InfoProvider = infoProvider
 
-    member val InputReader = inputReader
+    member _.InputReader = inputReader
 
-    member val Solver = solver
+    member _.Solver = solver
 
-    member val Logger = logger
+    member _.Logger = logger
 
     member this.SolveAsync() =
         task {
-            this.Logger.LogInfo "Starting the solver..."
-            this.Logger.LogInfo "Getting initial info..."
-            let! info = this.InfoProvider.GetInfoAsync() |> Async.AwaitTask
-            this.Logger.LogInfo $"Received the following start info: {info}"
+            let inline log msg = this.Logger.LogInfo msg
 
-            this.Logger.LogInfo $"Reading input from \"{info}\"..."
-            let! input = this.InputReader.ReadInputAsync info |> Async.AwaitTask
-            this.Logger.LogInfo "Read operation successful!"
+            log "Getting initial info..."
+            let! info = this.InfoProvider.GetInfoAsync()
+            log $"Received the following start info: {info}"
 
-            this.Logger.LogInfo "Trying to solve the task..."
-            let! solution = this.Solver.SolveAsync input |> Async.AwaitTask
-            this.Logger.LogInfo "Task solved!"
+            log $"Reading input from \"{info}\"..."
+            let! input = this.InputReader.ReadInputAsync info
+            log "Read operation successful!"
+
+            log "Trying to solve the task..."
+            let! solution = this.Solver.SolveAsync input
+            log "Task solved!"
 
             return solution
         }
