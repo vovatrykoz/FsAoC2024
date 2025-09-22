@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="IAdventSolver.fs" /><Compile Include="ILogger.fs" /><Compile Include="IInputReader.fs" /><Compile Include="ConsoleLogger.fs" /><Compile Include="SolutionProvider.fs" />
+    <Compile Include="IAdventSolver.fs" /><Compile Include="ILogger.fs" /><Compile Include="IInputReader.fs" /><Compile Include="IInfoProvider.fs" /><Compile Include="ConsoleInfoProvider.fs" /><Compile Include="ConsoleLogger.fs" /><Compile Include="SolutionProvider.fs" />
   </ItemGroup>
 
 </Project>

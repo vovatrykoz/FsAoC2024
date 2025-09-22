@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D3FC306A
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventOfCode.Tests", "tests\AdventOfCode.Tests\AdventOfCode.Tests.fsproj", "{7177C4DB-04D2-4DA9-8FE0-261A2514A1E3}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventOfCode.Console", "src\AdventOfCode.Console\AdventOfCode.Console.fsproj", "{DFF4F3FC-C9B7-4AB7-B2B9-F0758296A266}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AdventOfCode.Solvers", "src\AdventOfCode.Solvers\AdventOfCode.Solvers.fsproj", "{7BCBF96F-8C5C-4A3F-983E-F03BA7884E19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +32,19 @@ Global
 		{7177C4DB-04D2-4DA9-8FE0-261A2514A1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7177C4DB-04D2-4DA9-8FE0-261A2514A1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7177C4DB-04D2-4DA9-8FE0-261A2514A1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFF4F3FC-C9B7-4AB7-B2B9-F0758296A266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF4F3FC-C9B7-4AB7-B2B9-F0758296A266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF4F3FC-C9B7-4AB7-B2B9-F0758296A266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF4F3FC-C9B7-4AB7-B2B9-F0758296A266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BCBF96F-8C5C-4A3F-983E-F03BA7884E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BCBF96F-8C5C-4A3F-983E-F03BA7884E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BCBF96F-8C5C-4A3F-983E-F03BA7884E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BCBF96F-8C5C-4A3F-983E-F03BA7884E19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{62F9E047-FD09-4508-B973-BFAFA926062F} = {F272ACF1-EA56-4929-BA11-141DC2F9F1CA}
 		{7177C4DB-04D2-4DA9-8FE0-261A2514A1E3} = {D3FC306A-8263-4C13-8D8E-E4520CB7948E}
+		{DFF4F3FC-C9B7-4AB7-B2B9-F0758296A266} = {F272ACF1-EA56-4929-BA11-141DC2F9F1CA}
+		{7BCBF96F-8C5C-4A3F-983E-F03BA7884E19} = {F272ACF1-EA56-4929-BA11-141DC2F9F1CA}
 	EndGlobalSection
 EndGlobal

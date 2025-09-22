@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="UnitTest1.fs" />
+    <Compile Include="DayOneTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\AdventOfCode.Core\AdventOfCode.Core.fsproj" />
+    <ProjectReference Include="..\..\src\AdventOfCode.Solvers\AdventOfCode.Solvers.fsproj" />
   </ItemGroup>
 
 </Project>
