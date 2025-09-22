@@ -15,14 +15,6 @@ try
     let solutionProvider =
         new SolutionProvider<string, HistorianListPair, int>(infoProvider, reader, solver, logger)
 
-    let args = Environment.GetCommandLineArgs()
-
-    if Array.length args < 2 then
-        logger.LogError "Please provide the path to the file with the input data"
-        Environment.Exit -1
-
-    let path = args[1]
-
     let solution =
         solutionProvider.SolveAsync() |> Async.AwaitTask |> Async.RunSynchronously
 
